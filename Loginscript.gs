@@ -8,7 +8,6 @@
 /*Global Vars*/
 
 
-
 function doGet() {
  var app = UiApp.createApplication().setTitle('Security').
 setStyleAttribute('background', '#ccc');
@@ -22,7 +21,6 @@ setStyleAttribute('background', '#ccc');
    
      var clientOK = true ; var name = client[n][0] ;
 
-//test
   var sheet = SpreadsheetApp.openById('key').getSheetByName('Sheet');
   var dataRange = sheet.getDataRange();
   var values = dataRange.getValues();
@@ -36,7 +34,6 @@ setStyleAttribute('background', '#ccc');
       }
     }    
   }  
-     //supportlanguage();
      if(role == "IT"){
      return HtmlService
          .createTemplateFromFile('ITDEP')
@@ -57,12 +54,6 @@ setStyleAttribute('background', '#ccc');
          .setTitle('Webapp - Supervisor');
      }
     
-     
-       /* SetValueSS();*/
-      /* return HtmlService
-         .createTemplateFromFile('Index')
-         .evaluate()
-         .setTitle('Webapp');*/
    };
  }
  if(!clientOK){
