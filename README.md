@@ -1,4 +1,4 @@
 # googleapps
 Google Apps Scripts code
 
-Some code snippets
+Added a Google Apps autologin script.
